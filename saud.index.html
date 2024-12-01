@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الشخصي</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background-color: #2C3E50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495E;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #1ABC9C;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2C3E50;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        section {
+            padding: 30px;
+            margin: 20px 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        img {
+            max-width: 200px;  
+            height: auto;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #2C3E50;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #ecf0f1;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label, input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #1ABC9C;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #16A085;
+        }
+        .contact-info {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .contact-info h3 {
+            color: #34495E;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>موقعي الشخصي</h1>
+    </header>
+
+    <nav>
+        <a href="#home">الصفحة الرئيسية</a>
+        <a href="#about">عنّي</a>
+        <a href="#portfolio">معرض الأعمال</a>
+        <a href="#contact">اتصل بي</a>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <h2>الصفحة الرئيسية</h2>
+            <p>مرحباً! أنا حسين الديحاني. هنا يمكنك معرفة المزيد عني وعن اهتماماتي.</p>
+            <img src="your-image.jpg" alt="حسين الديحاني">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>عنّي</h2>
+            <p>أنا حسين الديحاني. أتمتع بهوايات مثل لعب كرة القدم ومتابعة التكنولوجيا الحديثة. كما أنني أملك خبرة في تحليل البيانات وتصميم واجهات المستخدم.</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>معرض الأعمال</h2>
+            <p>في هذه الصفحة يمكنك الاطلاع على أعمالي السابقة:</p>
+            <ul>
+                <li>
+                    <h3>مشروع 1: تصميم واجهة المستخدم</h3>
+                    <p>قمت بتصميم واجهة مستخدم لتطبيق موبايل يهدف إلى تسهيل عملية الطلبات عبر الإنترنت. تم استخدام HTML وCSS وJavaScript.</p>
+                </li>
+                <li>
+                    <h3>مشروع 2: تحليل بيانات التجارة الإلكترونية</h3>
+                    <p>استخدمت Python وSQL لتحليل بيانات مبيعات عبر الإنترنت وتقديم رؤى استراتيجية حول سلوك العملاء.</p>
+                </li>
+                <li>
+                    <h3>مشروع 3: تطبيق الويب التفاعلي</h3>
+                    <p>بناء تطبيق ويب تفاعلي باستخدام React وNode.js لعرض البيانات بشكل ديناميكي وتفاعل مع المستخدم بشكل سريع وفعال.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>اتصل بي</h2>
+            <p>إذا كان لديك أي استفسار أو ترغب في التعاون في مشاريع، يمكنك التواصل معي عبر الطرق التالية:</p>
+            
+            <!-- معلومات الاتصال -->
+            <div class="contact-info">
+                <h3>رقم الهاتف: 0509265192</h3>
+                <h3>البريد الإلكتروني: <a href="mailto:Hussin_alaadi@outlook.com">Hussin_alaadi@outlook.com</a></h3>
+            </div>
+
+            <p>أو يمكنك إرسال رسالة عبر النموذج التالي:</p>
+            <form>
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">الرسالة:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">إرسال</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 حسين الديحاني. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>
+
+
